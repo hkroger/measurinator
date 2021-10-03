@@ -51,9 +51,9 @@ gem 'therubyracer'
 
 # Security fixes
 gem "sprockets", ">= 3.7.2"
-gem "nokogiri", "~> 1.10.4"
+gem "nokogiri", "~> 1.12.5"
 gem "ffi", ">= 1.9.24"
-gem "devise", ">= 4.6.0"
+gem "devise", "~> 4.7.1"
 gem "activejob", ">= 4.2.11"
 gem "rack", ">= 1.6.11"
 gem "actionview", ">= 4.2.11.1"
