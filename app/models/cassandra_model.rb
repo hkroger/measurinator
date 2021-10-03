@@ -8,7 +8,7 @@ class CassandraModel
   include ActiveModel::Conversion
 
   MAX_AGE_IN_SEC = 60
-  UNQUOTED_TYPES = [Fixnum, TrueClass, FalseClass, Cassandra::Uuid, Cassandra::TimeUuid, Float, BigDecimal]
+  UNQUOTED_TYPES = [Integer, TrueClass, FalseClass, Cassandra::Uuid, Cassandra::TimeUuid, Float, BigDecimal]
   cattr_accessor :client_created
   cattr_accessor :session
   attr_accessor :params

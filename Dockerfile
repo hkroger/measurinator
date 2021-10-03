@@ -3,7 +3,7 @@ MAINTAINER Hannu "hkroger@gmail.com"
 
 RUN apt-get update
 RUN apt-get -y install apt-utils
-RUN apt-get -y install sudo autoconf automake pkg-config libtool tzdata
+RUN apt-get -y install sudo autoconf automake pkg-config libtool tzdata shared-mime-info
 
 ENV TZ=Europe/Helsinki
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

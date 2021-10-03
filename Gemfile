@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 # ruby '~> 2.1.9'
 
-gem 'rails', '~> 4.2.11.1'
+gem 'rails', '~> 5.2.4.4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -25,8 +25,8 @@ gem 'highline'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 5.0.3'
-  gem 'coffee-rails', '~> 4.1.0'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -37,25 +37,15 @@ end
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
 gem 'therubyracer'
-#gem 'libv8', '~>3.16.14.15'
-
-# To use debugger
-# gem 'debugger'
+# for railties app_generator_test
+gem "bootsnap", ">= 1.1.0", require: false
 
 # Security fixes
 gem "sprockets", ">= 3.7.2"
 gem "nokogiri", "~> 1.12.5"
 gem "ffi", ">= 1.9.24"
 gem "devise", "~> 4.7.1"
-gem "activejob", ">= 4.2.11"
-gem "rack", ">= 1.6.11"
-gem "actionview", ">= 4.2.11.1"
 gem "rails-html-sanitizer", ">= 1.0.4"
 gem "loofah", ">= 2.2.3"
+

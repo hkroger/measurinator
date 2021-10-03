@@ -5,10 +5,9 @@ class StatusesController < ApplicationController
     is_ok = statuses.all?{ |ps| ps.is_ok? }
     error_statuses = statuses.select{ |ps| !ps.is_ok? }.map{ |ps| ps.process_name }
     if is_ok
-       render :text => "All ok"
+       render :plain => "All ok"
     else
-       render :text => "Problem with processes: #{error_statuses.join(", ")}", :status => 500
+       render :plain => "Problem with processes: #{error_statuses.join(", ")}", :status => 500
     end
-
   end
 end

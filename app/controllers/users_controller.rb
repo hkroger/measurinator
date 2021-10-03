@@ -1,6 +1,6 @@
 # -*- encoding : utf-8 -*-
 class UsersController < AuthorizedController
-  before_filter :admin_only
+  before_action :admin_only
 
   def index
     @users = User.all.select{ |u| u.active? || params[:all] }

@@ -4,8 +4,8 @@ class AlarmMailer < ActionMailer::Base
 
   def alarm(email, text)
     mail(:to => email, :subject => text) do |format|
-      format.html { render :text => text }
-      format.text { render :text => text }
+      format.html { render :plain => text }
+      format.text { render :plain => text }
     end
   end
 end

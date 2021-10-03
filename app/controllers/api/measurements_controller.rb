@@ -25,11 +25,11 @@ module Api
         render :json => stats
       end
     rescue InvalidParameters => e
-      render :text => e.message, :status => 400
+      render :plain => e.message, :status => 400
     rescue ChecksumDoesNotMatch => e
-      render :text => e.message, :status => 401
+      render :plain => e.message, :status => 401
     rescue NotAuthorizedException => e
-      render :text => e.message, :status => 403
+      render :plain => e.message, :status => 403
     end
 
     def create
@@ -62,11 +62,11 @@ module Api
 
       render :nothing => true
     rescue InvalidParameters => e
-      render :text => e.message, :status => 400
+      render :plain => e.message, :status => 400
     rescue ChecksumDoesNotMatch => e
-      render :text => e.message, :status => 401
+      render :plain => e.message, :status => 401
     rescue NotAuthorizedException => e
-      render :text => e.message, :status => 403
+      render :plain => e.message, :status => 403
     end
 
     private

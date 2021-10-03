@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-Web::Application.routes.draw do
+Rails.application.routes.draw do
   devise_for :users, :skip => [:sessions], :controllers => { registrations: 'registrations' }
   as :user do
     get 'signin' => 'devise/sessions#new', :as => :new_user_session
