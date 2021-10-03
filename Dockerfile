@@ -1,4 +1,4 @@
-FROM phusion/passenger-ruby23:latest
+FROM phusion/passenger-ruby26:latest
 MAINTAINER Hannu "hkroger@gmail.com"
 
 RUN apt-get update

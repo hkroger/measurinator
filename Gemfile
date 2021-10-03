@@ -16,7 +16,7 @@ gem 'uuidtools'
 
 # gem 'devise', '~>3.5.1'
 gem 'simple-navigation'
-gem 'haml'
+gem 'haml', '~> 5.0.4'
 gem 'pry'
 gem 'font-awesome-sass'
 
