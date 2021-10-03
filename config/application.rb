@@ -17,5 +17,6 @@ Bundler.require(*Rails.groups)
 module Web
   class Application < Rails::Application
     config.load_defaults 5.0
+    config.time_zone = 'Helsinki'
   end
 end

@@ -2,8 +2,7 @@ FROM phusion/passenger-ruby26:latest
 MAINTAINER Hannu "hkroger@gmail.com"
 
 RUN apt-get update
-RUN apt-get -y install apt-utils
-RUN apt-get -y install sudo autoconf automake pkg-config libtool tzdata shared-mime-info
+RUN apt-get -y install sudo autoconf automake shared-mime-info
 
 ENV TZ=Europe/Helsinki
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
