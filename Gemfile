@@ -43,7 +43,7 @@ gem "bootsnap", ">= 1.1.0", require: false
 
 # Security fixes
 gem "sprockets", ">= 3.7.2"
-gem "nokogiri", "~> 1.12.5"
+gem "nokogiri", "~> 1.13.6"
 gem "ffi", ">= 1.9.24"
 gem "devise", "~> 4.7.1"
 gem "rails-html-sanitizer", ">= 1.0.4"
